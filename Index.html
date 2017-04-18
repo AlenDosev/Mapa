@@ -31,7 +31,7 @@
         cursor: pointer;
     }
 
-    .pin[data-tooltip]::before {
+    .pin::before {
         position: absolute;
         left: 0;
         top: -40px;
@@ -46,7 +46,7 @@
         display: none;
     }
 
-    .pin[data-tooltip]::after {
+    .pin::after {
         position: absolute;
         left: 15px;
         top: -10px;
@@ -57,11 +57,11 @@
         display: none;
     }
 	
-	.pin[data-tooltip]:hover {
+	.pin:hover {
 
     }
 	
-    .pin[data-tooltip]:hover::after, .pin[data-tooltip]:hover::before {
+    .pin:hover::after, .pin:hover::before {
         display: block;
     }
 	
