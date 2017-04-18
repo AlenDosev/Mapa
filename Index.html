@@ -30,9 +30,12 @@
         height: 6%;
         cursor: pointer;
     }
-
-    .pin::before {
-        position: absolute;
+	.pin:hover {
+		
+    }
+	
+	.pin:hover::before {
+		position: absolute;
         left: 0;
         top: -40px;
         background-color: #32AF32;
@@ -41,31 +44,20 @@
         line-height: 30px;
         border-radius: 5px;
         padding: 0 15px;
-        content: "DADA";
+        content: attr(data-tooltip);
         white-space: nowrap;
-        display: none;
-    }
-
-    .pin::after {
-        position: absolute;
+	}
+	
+	.pin:hover::after {
+		position: absolute;
         left: 15px;
         top: -10px;
         border-top: 7px solid #32AF32;
         border-left: 7px solid transparent;
         border-right: 7px solid transparent;
         content: "";
-        display: none;
-    }
-	
-	.pin:hover {
+	}
 
-    }
-	
-    .pin:hover::after, .pin:hover::before {
-        display: block;
-    }
-	
-	
 
     #pin1{
         left: 59.8%;
